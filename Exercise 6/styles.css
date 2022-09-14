@@ -3,6 +3,8 @@
 text-align: center;
 }
 
-p{
+p{ 
     color: blue;
 }
+
+.content{margin-bottom: 12px;}
