@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<!--input tag with and id called "name-input" that takes in a text value-->   
+<input id="name-input" type="text" placeholder="Enter your name" />
+<!--button tag with an id called "my-button" with content that says "Click Me"-->
+<button id="my-button">Click Me</button>
+
+<!--Script tag that allows you to add javascript code to your html file-->
+<script>
+  //My guess is that "document.queryselector" is some kind of method that allows to get html tags for implementation in your javascript code "
+  //variable called "myButton" that points toward the input tag above. 
+  var myButton = document.querySelector('#my-button');
+  //variable called "nameInput" that points toward the button tag above
+  var nameInput = document.querySelector('#name-input');
+
+  //implementation of a method/function called "addEventListener" with the myButton variable
+  myButton.addEventListener('click', function () {
+    //if statement that prints out a message if the nameInput variable returns a value
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
+
+
+</html>
